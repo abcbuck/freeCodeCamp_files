@@ -7,7 +7,7 @@ NUMBER=$RANDOM
 while [[ $NUMBER -ge 32000 ]]; do
   NUMBER=$RANDOM
 done
-NUMBER=$(( $NUMBER % 1000 ))
+NUMBER=$(( $NUMBER % 1000 + 1 ))
 
 echo -n "Enter your username: "
 read USERNAME
